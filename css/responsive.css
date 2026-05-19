@@ -1,13 +1,11 @@
+/* responsive.css */
+
 @media (max-width: 992px) {
 
   .hero-content,
   .about-content,
   .contact-content {
     grid-template-columns: 1fr;
-  }
-
-  .hero-text h2 {
-    font-size: 3rem;
   }
 
   .hero-image {
@@ -17,20 +15,60 @@
   .nav-links {
     display: none;
   }
+
 }
 
 @media (max-width: 768px) {
 
+  section {
+    padding: 80px 0;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* HEADER */
+
+  .header .container {
+    min-height: 80px;
+  }
+
+  .logo h1 {
+    font-size: 1rem;
+
+    line-height: 1.2;
+  }
+
+  .btn-whatsapp {
+    display: none;
+  }
+
+  /* HERO */
+
+  .hero {
+    padding-top: 140px;
+  }
+
+  .hero-content {
+    gap: 40px;
+  }
+
+  .hero-text {
+    text-align: center;
+
+    max-width: 100%;
+  }
+
   .hero-text h2 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
+
+    line-height: 1.2;
   }
 
-  .section-title h2 {
-    font-size: 2rem;
-  }
-
-  .about-text h2 {
-    font-size: 2rem;
+  .hero-text p {
+    font-size: 1rem;
   }
 
   .hero-buttons {
@@ -40,4 +78,48 @@
   .btn {
     width: 100%;
   }
+
+  .hero-image img {
+    border-radius: 20px;
+  }
+
+  /* TITLES */
+
+  .section-title h2,
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  /* CARDS */
+
+  .services-grid,
+  .testimonials-grid,
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card,
+  .testimonial-card,
+  .contact-item {
+    padding: 24px;
+  }
+
+  /* GALLERY */
+
+  .swiper-slide img {
+    height: 240px;
+  }
+
+  /* WHATSAPP */
+
+  .whatsapp-float {
+    width: 55px;
+    height: 55px;
+
+    font-size: 1.5rem;
+
+    right: 15px;
+    bottom: 15px;
+  }
+
 }
