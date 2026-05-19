@@ -1,11 +1,426 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Prati Informática | Assistência Técnica em Torrinha</title>
+
+    <meta
+      name="description"
+      content="Assistência técnica especializada em computadores, celulares, impressoras e redes em Torrinha-SP."
+    />
+
+    <link rel="shortcut icon" href="assets/icons/favicon-32x32.png" type="image/x-icon">
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- SWIPER CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <h1>Prati Informática</h1>
+        </div>
+
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+
+            <li>
+              <a href="#services">Serviços</a>
+            </li>
+
+            <li>
+              <a href="#gallery">Galeria</a>
+            </li>
+
+            <li>
+              <a href="#about">Sobre</a>
+            </li>
+
+            <li>
+              <a href="#contact">Contato</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a
+          href="https://wa.me/5514991310067"
+          target="_blank"
+          class="btn btn-whatsapp"
+        >
+          WhatsApp
+        </a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="badge"> Assistência Técnica Especializada </span>
+
+          <h2>Soluções em Informática, Redes e Tecnologia</h2>
+
+          <p>
+            Suporte técnico especializado em computadores, celulares,
+            impressoras, roteadores e equipamentos de informática em
+            Torrinha-SP.
+          </p>
+
+          <div class="hero-buttons">
+            <a
+              href="https://wa.me/5514991310067"
+              target="_blank"
+              class="btn primary-btn"
+            >
+              Solicitar Orçamento
+            </a>
+
+            <a href="#services" class="btn secondary-btn"> Nossos Serviços </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="./images/hero/setup.jpg"
+            alt="Assistência técnica informática"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-title">
+          <span>Serviços</span>
+
+          <h2>O que fazemos</h2>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fa-solid fa-computer"></i>
+
+            <h3>Computadores</h3>
+
+            <p>Formatação, manutenção, limpeza e upgrade de PCs e notebooks.</p>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+
+            <h3>Celulares</h3>
+
+            <p>Suporte técnico e manutenção para dispositivos móveis.</p>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-wifi"></i>
+
+            <h3>Redes</h3>
+
+            <p>Configuração de roteadores, modens e redes Wi-Fi.</p>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-print"></i>
+
+            <h3>Impressoras</h3>
+
+            <p>Instalação, limpeza e manutenção de impressoras.</p>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-camera"></i>
+
+            <h3>Câmeras</h3>
+
+            <p>Instalação e configuração de câmeras e monitoramento.</p>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-microchip"></i>
+
+            <h3>Upgrade</h3>
+
+            <p>Instalação de SSD, memória RAM e melhorias de desempenho.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="section-title">
+          <span>Galeria</span>
+
+          <h2>Nossos serviços e estrutura</h2>
+        </div>
+
+        <div class="swiper gallerySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./images/gallery/gallery-1.jpg"
+                alt="Assistência técnica"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="./images/gallery/gallery-2.jpg"
+                alt="Conserto de notebook"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="./images/gallery/gallery-3.jpg"
+                alt="Configuração de redes"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./images/gallery/gallery-4.jpg" alt="Suporte técnico" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./images/gallery/gallery-5.jpg" alt="Computadores" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./images/gallery/gallery-6.jpg" alt="Manutenção" />
+            </div>
+          </div>
+
+          <!-- PAGINATION -->
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+      <div class="container about-content">
+        <div class="about-image">
+          <img src="./images/about/prati.jpg" alt="Prati Informática" />
+        </div>
+
+        <div class="about-text">
+          <span>Sobre</span>
+
+          <h2>Tecnologia e suporte para Torrinha e região</h2>
+
+          <p>
+            A Prati Informática atua oferecendo assistência técnica
+            especializada para computadores, celulares, impressoras, redes e
+            equipamentos de comunicação.
+          </p>
+
+          <p>
+            Nosso objetivo é garantir atendimento rápido, suporte eficiente e
+            soluções modernas para clientes residenciais e empresas.
+          </p>
+
+          <a
+            href="https://wa.me/5514991310067"
+            target="_blank"
+            class="btn primary-btn"
+          >
+            Entrar em Contato
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-title">
+          <span>Avaliações</span>
+
+          <h2>O que os clientes dizem</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <h3>⭐ 4.6 no Google</h3>
+
+            <p>Atendimento rápido, profissional e confiável.</p>
+          </div>
+
+          <div class="testimonial-card">
+            <h3>Suporte eficiente</h3>
+
+            <p>Soluções rápidas para computadores, celulares e redes.</p>
+          </div>
+
+          <div class="testimonial-card">
+            <h3>Atendimento local</h3>
+
+            <p>Assistência técnica especializada em Torrinha-SP.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-title">
+          <span>Contato</span>
+
+          <h2>Fale conosco</h2>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+
+              <div>
+                <h3>Endereço</h3>
+
+                <p>
+                  R. José Cassola, 337<br />
+                  Residencial da Pedra<br />
+                  Torrinha - SP
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+
+              <div>
+                <h3>Telefone</h3>
+
+                <p>(14) 99131-0067</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-brands fa-instagram"></i>
+
+              <div>
+                <h3>Instagram</h3>
+
+                <p>@pratiinformatica</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <input type="text" placeholder="Seu nome" required />
+
+            <input type="tel" placeholder="Seu telefone" required />
+
+            <input type="text" placeholder="Equipamento" required />
+
+            <textarea
+              placeholder="Descreva o problema"
+              rows="5"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn primary-btn">
+              Solicitar Orçamento
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <h3>Prati Informática</h3>
+
+          <p>Assistência técnica especializada em informática e comunicação.</p>
+        </div>
+
+        <div>
+          <h4>Contato</h4>
+
+          <p>(14) 99131-0067</p>
+
+          <p>Torrinha - SP</p>
+        </div>
+
+        <div>
+          <h4>Redes Sociais</h4>
+
+          <a href="https://www.instagram.com/pratiinformatica/" target="_blank">
+            Instagram
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+
+    <a
+      href="https://wa.me/5514991310067"
+      target="_blank"
+      class="whatsapp-float"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- SWIPER JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="./js/navbar.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/whatsapp.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
