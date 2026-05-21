@@ -195,9 +195,11 @@ section {
     #0f172a;
 }
 
-/* ===== DESKTOP ===== */
+/* ===== HERO DESKTOP ===== */
 
 .hero-content {
+  width: 100%;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
 
@@ -207,7 +209,37 @@ section {
 }
 
 .hero-text {
+  width: 100%;
   max-width: 600px;
+}
+
+.hero-text h2 {
+  font-size: clamp(2rem, 5vw, 5rem);
+
+  line-height: 1.05;
+
+  margin-bottom: 30px;
+}
+
+.hero-text p {
+  max-width: 540px;
+}
+
+.hero-image {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 700px;
+
+  border-radius: 25px;
+
+  object-fit: cover;
 }
 
 .badge {
@@ -613,4 +645,103 @@ section {
 
 .whatsapp-float:hover {
   transform: scale(1.1);
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .btn-whatsapp {
+    display: none;
+  }
+
+  .navbar {
+    width: 100%;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background: #0f172a;
+
+    border-top: 1px solid #1e293b;
+
+    padding: 20px;
+
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .hero {
+    padding-top: 140px;
+    padding-bottom: 80px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 30px;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 340px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .hero-buttons {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 15px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
 }
