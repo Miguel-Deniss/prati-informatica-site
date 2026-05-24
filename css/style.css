@@ -147,6 +147,8 @@ section {
   justify-content: space-between;
 
   gap: 20px;
+
+  position: relative;
 }
 
 .logo h1 {
@@ -195,11 +197,9 @@ section {
     #0f172a;
 }
 
-/* ===== HERO DESKTOP ===== */
+/* HERO DESKTOP */
 
 .hero-content {
-  width: 100%;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
 
@@ -210,36 +210,39 @@ section {
 
 .hero-text {
   width: 100%;
-  max-width: 600px;
-}
-
-.hero-text h2 {
-  font-size: clamp(2rem, 5vw, 5rem);
-
-  line-height: 1.05;
-
-  margin-bottom: 30px;
-}
-
-.hero-text p {
-  max-width: 540px;
 }
 
 .hero-image {
   width: 100%;
 
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.hero-image::before {
+  content: "";
+
+  position: absolute;
+  inset: -10px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.5),
+    rgba(6, 182, 212, 0.2)
+  );
+
+  filter: blur(40px);
+
+  z-index: -1;
 }
 
 .hero-image img {
   width: 100%;
-  max-width: 700px;
+  max-width: 550px;
 
   border-radius: 25px;
-
-  object-fit: cover;
 }
 
 .badge {
@@ -286,39 +289,6 @@ section {
   align-items: center;
 
   gap: 20px;
-}
-
-.hero-image {
-  width: 100%;
-
-  display: flex;
-  justify-content: center;
-
-  position: relative;
-}
-
-.hero-image::before {
-  content: "";
-
-  position: absolute;
-  inset: -10px;
-
-  background: linear-gradient(
-    135deg,
-    rgba(37, 99, 235, 0.5),
-    rgba(6, 182, 212, 0.2)
-  );
-
-  filter: blur(40px);
-
-  z-index: -1;
-}
-
-.hero-image img {
-  width: 100%;
-  max-width: 550px;
-
-  border-radius: 25px;
 }
 
 /* SECTION TITLE */
@@ -647,7 +617,7 @@ section {
   transform: scale(1.1);
 }
 
-/* ===== MOBILE ===== */
+/* MOBILE */
 
 @media (max-width: 768px) {
 
@@ -697,11 +667,10 @@ section {
     flex-direction: column;
 
     align-items: center;
-    justify-content: center;
 
     text-align: center;
 
-    gap: 30px;
+    gap: 40px;
   }
 
   .hero-text {
@@ -717,9 +686,6 @@ section {
   }
 
   .hero-image {
-    width: 100%;
-
-    display: flex;
     justify-content: center;
   }
 
@@ -744,4 +710,34 @@ section {
     max-width: 300px;
   }
 
+  .services-grid,
+  .testimonials-grid,
+  .footer-content,
+  .about-content,
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title h2,
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .swiper-slide img {
+    height: 220px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .whatsapp-float {
+    width: 55px;
+    height: 55px;
+
+    right: 15px;
+    bottom: 15px;
+
+    font-size: 1.5rem;
+  }
 }
